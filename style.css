@@ -1,0 +1,129 @@
+html {
+  font-family: "Exo 2", sans-serif;
+  color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.grid-container {
+  background: white;
+  display: grid;
+  /* border: solid black 2px; */
+  width: 500px;
+  height: 500px;
+  /* grid-template-columns: repeat(16, 1fr); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.grid-cell {
+  display: flex;
+  /* border: solid black 1px; */
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opac;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #141817;
+  cursor: pointer;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.left {
+  height: 500px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  padding: 16px 0px;
+  position: fixed;
+  justify-content: center;
+  align-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  background: none;
+  width: 75px;
+  height: 75px;
+  border: none;
+  outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button{
+    padding: 10px; 
+    width: 100%;
+    border-radius: 10px;
+    border: solid black 1.5px;
+    background: white;
+    transition: transform 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
